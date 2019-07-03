@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="ЮСИЭПИ.PageErrorR"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ЮСИЭПИ"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush ImageSource="ms-appx:/Assets/error.png" Stretch="Fill"/>
+    </Page.Background>
+
+    <Page.BottomAppBar>
+        <CommandBar Background="#FF2B0030">
+            <AppBarButton Icon="Back" Label="Назад" Click="AppBarButton_Click_2"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Панель заголовка-->
+        <StackPanel Grid.Row="0" Margin="0,0,0,0">
+            <TextBlock Margin="5,0,0,0" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Padding="5,0,0,0" TextAlignment="Center">
+            	<Run Text="Ошибка "/>
+            	<Run Text="ресурса"/>
+            </TextBlock>
+        </StackPanel>
+
+        <!--TODO: Содержимое должно размещаться в следующей сетке-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="0,0,0,0">
+            <TextBlock Margin="5,81,0,0" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Padding="5,0,0,0" FontSize="30" TextWrapping="Wrap" LineHeight="36" TextAlignment="Center">
+            	<Run Text="Сервер в данный момент недоступен."/>
+            	<LineBreak/>
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="Приносим извинения за доставленные неудобства."/>
+            	<LineBreak/>
+            	<Run Text="Вернитесь в программу через некоторое время."/>
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Page>

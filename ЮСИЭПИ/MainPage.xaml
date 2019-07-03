@@ -1,0 +1,538 @@
+﻿<Page
+    x:Name="ЮСИЭПИ_MainPage"
+    x:Class="ЮСИЭПИ.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ЮСИЭПИ"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="MainPage_Grid">
+        <Pivot x:Name="MainPage_Pivot" Title="Сахалинский гуманитарно-технологический институт" Foreground="#FF00FFE8">
+            <Pivot.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Menu.png"/>
+            </Pivot.Background>
+            <PivotItem x:Name="MainPage_Главная" Header="Главная" Foreground="White">
+                <ListView x:Name="MainPage_Menu" Margin="0" 
+                          IsItemClickEnabled="True"
+                          ItemClick="ListView_ItemClick" >
+
+                    <ListViewItem x:Name="ListItem1" Pivot.SlideInAnimationGroup="0"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S1" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T1Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T1Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem2" Pivot.SlideInAnimationGroup="0"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S2" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T2Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T2Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem3" Pivot.SlideInAnimationGroup="1"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S3" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T3Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T3Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem4" Pivot.SlideInAnimationGroup="1"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S4" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T4Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T4Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem5" Pivot.SlideInAnimationGroup="2"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S5" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T5Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T5Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem6" Pivot.SlideInAnimationGroup="2"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S6" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T6Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T6Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem7" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S7" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T7Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T7Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem8" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S8" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T8Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T8Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem9" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S9" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T9Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T9Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListItem10" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <ListViewItem.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="http://www.sakhiepi.ru/css/images/fon4.png"/>
+                        </ListViewItem.Background>
+                        <StackPanel x:Name="S10" Margin="0,0,0,9.5">
+                            <TextBlock x:Name="T10Title"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0"/>
+                            <TextBlock x:Name="T10Description"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </PivotItem>
+            <!-- Конец раздела Главная ************************** -->
+            <PivotItem x:Name="MainPage_Новости" Header="Новости">
+                <ListView Margin="0,0" x:Name="AllNews"
+                          IsItemClickEnabled="True" ItemClick="AllNews_ItemClick">
+
+                    <ListViewItem x:Name="MainPage_News1" Pivot.SlideInAnimationGroup="1"
+                                  Padding="0" Margin="0,0,0,15" Tag="0" PointerReleased="ListItem1_PointerReleased" Background="{x:Null}">
+                        <StackPanel x:Name="News1" Margin="0,0,0,9.5" Visibility="Collapsed" Pivot.SlideInAnimationGroup="1">
+                            <TextBlock x:Name="NewsTitle1"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" FontWeight="Bold" FontSize="25" Foreground="#FF00FFE8"/>
+                            <TextBlock x:Name="NewsDate1" 
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0" Foreground="#FFD1D1D1" FontWeight="Bold" FontSize="18"/>
+                            <TextBlock x:Name="NewsText1" Visibility="Visible"
+                                    Pivot.SlideInAnimationGroup="3"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0" TextWrapping="Wrap" Foreground="White" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="MainPage_News2" Pivot.SlideInAnimationGroup="2"
+                                  Padding="0"  Margin="0,0,0,15" Tag="0" PointerReleased="ListItem1_PointerReleased" Background="{x:Null}">
+
+                        <StackPanel x:Name="News2" Margin="0,0,0,9.5" Visibility="Collapsed" Pivot.SlideInAnimationGroup="2">
+                            <TextBlock x:Name="NewsTitle2"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" FontWeight="Bold" FontSize="25" Foreground="#FF00FFE8"/>
+                            <TextBlock x:Name="NewsDate2"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0" Foreground="#FFD1D1D1" FontWeight="Bold" FontSize="18"/>
+                            <TextBlock x:Name="NewsText2" Visibility="Visible"
+                                    Pivot.SlideInAnimationGroup="3"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0" TextWrapping="Wrap" Foreground="White" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="MainPage_News3" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Margin="0,0,0,15" Tag="0" PointerReleased="ListItem1_PointerReleased" Background="{x:Null}">
+
+                        <StackPanel x:Name="News3" Margin="0,0,0,9.5" Visibility="Collapsed" Pivot.SlideInAnimationGroup="3">
+                            <TextBlock x:Name="NewsTitle3"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" FontWeight="Bold" FontSize="25" Foreground="#FF00FFE8"/>
+                            <TextBlock x:Name="NewsDate3"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0" Foreground="#FFD1D1D1" FontWeight="Bold" FontSize="18"/>
+                            <TextBlock x:Name="NewsText3" Visibility="Visible"
+                                    Pivot.SlideInAnimationGroup="3"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0" TextWrapping="Wrap" Foreground="White" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="MainPage_News4" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Margin="0,0,0,15" Tag="0" PointerReleased="ListItem1_PointerReleased" Background="{x:Null}">
+
+                        <StackPanel x:Name="News4" Margin="0,0,0,9.5" Visibility="Collapsed" Pivot.SlideInAnimationGroup="3">
+                            <TextBlock x:Name="NewsTitle4"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" FontWeight="Bold" FontSize="25" Foreground="#FF00FFE8" Margin="0,0,0,0"/>
+                            <TextBlock x:Name="NewsDate4"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0" Foreground="#FFD1D1D1" FontWeight="Bold" FontSize="18"/>
+                            <TextBlock x:Name="NewsText4" Visibility="Visible"
+                                    Pivot.SlideInAnimationGroup="3"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemContentTextBlockStyle}" Padding="10,0,0,0" TextWrapping="Wrap" Foreground="White" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="Архив"
+                                  Padding="0" Visibility="Visible" Margin="0,0,0,15" Tag="10000" PointerReleased="ListItem1_PointerReleased" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Button x:Name="ArchiveButton" Visibility="Collapsed" Content="Архив новостей..." HorizontalAlignment="Center" VerticalAlignment="Top" Height="57" Padding="0" Width="343" Click="ArchiveButton_Click"/>
+                    </ListViewItem>
+                </ListView>
+            </PivotItem>
+            <!-- Конец раздела Новости ************************** -->
+            <PivotItem x:Name="MainPage_Расписание" Header="Расписание">
+                <ListView Margin="0" x:Name="Raspisanie"
+                          IsItemClickEnabled="True" HorizontalAlignment="Center" VerticalAlignment="Top" ItemClick="Raspisanie_ItemClick">
+
+                    <ListViewItem x:Name="MyRasp" Pivot.SlideInAnimationGroup="1"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="MR" PointerReleased="ListItem1_PointerReleased">
+                        <StackPanel x:Name="MyR" Tag="MR" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Image Source="Assets/MyRasp.png" Width="115" Height="115" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <TextBlock x:Name="MyRaspText" Text="Моё расписание" FontSize="25"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" Width="235" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Height="109" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="MyRaspPrepod" Pivot.SlideInAnimationGroup="1"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="MR" PointerReleased="ListItem1_PointerReleased">
+                        <StackPanel x:Name="MyRP" Tag="MRP" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Image Source="Assets/Prepod.png" Width="115" Height="115" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <TextBlock x:Name="MyRaspPrepodText" Text="Расписание преподавателя" FontSize="25"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" Width="235" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Height="109" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListFaculty1" Pivot.SlideInAnimationGroup="1"
+                                  Padding="0" Visibility="Visible" Margin="0,0,0,5" Tag="7" PointerReleased="ListItem1_PointerReleased">
+                        <StackPanel x:Name="Faculty1" Tag="7" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Image Source="http://www.sakhiepi.ru/facultets/fei.png" Width="115" Height="115" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <TextBlock x:Name="NameFaculty1" Text="Факультет экономики и информатики" FontSize="25"
+                                    Pivot.SlideInAnimationGroup="1"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" Width="235" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Height="109" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListFaculty2" Pivot.SlideInAnimationGroup="2"
+                                  Padding="0" Visibility="Visible" Margin="0,0,0,5" Tag="9" PointerReleased="ListItem1_PointerReleased">
+                        <StackPanel x:Name="Faculty2" Tag="9" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Image Height="115" Width="115" Source="http://www.sakhiepi.ru/facultets/if.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <TextBlock x:Name="NameFaculty2" Text="Инженерный факультет" FontSize="25"
+                                    Pivot.SlideInAnimationGroup="2"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Width="235" Height="109" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListFaculty3" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Visible" Margin="0,0,0,5" Tag="4" PointerReleased="ListItem1_PointerReleased">
+                        <StackPanel x:Name="Faculty3" Tag="4" Margin="0,0,0,9.5" Orientation="Horizontal" Width="361">
+                            <Image Height="115" Width="115" Source="http://www.sakhiepi.ru/facultets/yuf.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <TextBlock x:Name="NameFaculty3" Text="Юридический факультет" FontSize="25"
+                                    Pivot.SlideInAnimationGroup="3"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" Width="235" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="111" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListFaculty4" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Visible" Margin="0,0,0,5" Tag="5" PointerReleased="ListItem1_PointerReleased">
+                        <StackPanel x:Name="Faculty4" Tag="5" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Image Height="115" Width="115" Source="http://www.sakhiepi.ru/facultets/fiya.jpg"/>
+                            <TextBlock x:Name="NameFaculty4" Text="Факультет иностранных языков" FontSize="25"
+                                    Pivot.SlideInAnimationGroup="3"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" Width="235" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Height="109" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="ListFaculty5" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Visible" Margin="0,0,0,5" Tag="0" PointerReleased="ListItem1_PointerReleased">
+                        <StackPanel x:Name="Faculty5" Tag="0" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Image Height="115" Width="115" Source="Assets/Prepod.png"/>
+                            <TextBlock x:Name="NameFaculty5" Text="Расписание преподавателей" FontSize="25"
+                                    Pivot.SlideInAnimationGroup="3"
+                                    CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                    Style="{StaticResource ListViewItemTextBlockStyle}" Padding="10,0,0,0" Width="235" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Height="109" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </PivotItem>
+            <!-- Конец раздела Расписание ************************** -->
+            <PivotItem x:Name="MainPage_Актуально" Header="Актуально">
+                <ListView Margin="0" x:Name="Actual"
+                          IsItemClickEnabled="True" HorizontalAlignment="Center" VerticalAlignment="Top" ItemClick="Actual_ItemClick">
+
+                    <ListViewItem x:Name="Actual1" Pivot.SlideInAnimationGroup="1"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <StackPanel x:Name="A1" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Grid Width="358" Height="222">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="8*"/>
+                                    <RowDefinition Height="0*"/>
+                                </Grid.RowDefinitions>
+                                <Image x:Name="ImageActual1" VerticalAlignment="Top" Grid.RowSpan="2"/>
+                                <StackPanel x:Name="StackPanelActual1" Margin="0,144,0,3.667" Grid.RowSpan="3" Background="#B20ABBC3">
+                                    <TextBlock x:Name="TextActual1" FontSize="25"
+                        			Pivot.SlideInAnimationGroup="1"
+                        			CommonNavigationTransitionInfo.IsStaggerElement="True"
+                        			Style="{StaticResource ListViewItemTextBlockStyle}" Padding="0" Width="338" Height="69" TextAlignment="Center" TextWrapping="Wrap" Margin="10,0,10.333,-0.333" Foreground="White"/>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="Actual2" Pivot.SlideInAnimationGroup="2"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <StackPanel x:Name="A2" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Grid Width="358" Height="222">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="8*"/>
+                                    <RowDefinition Height="0*"/>
+                                </Grid.RowDefinitions>
+                                <Image x:Name="ImageActual2" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="3" Margin="0,0,0,-0.333" Width="358"/>
+                                <StackPanel x:Name="StackPanelActual2" Margin="0,144,0,3.667" Grid.RowSpan="2" Background="#B20ABBC3">
+                                    <TextBlock x:Name="TextActual2" FontSize="25"
+                        			Pivot.SlideInAnimationGroup="1"
+                        			CommonNavigationTransitionInfo.IsStaggerElement="True"
+                        			Style="{StaticResource ListViewItemTextBlockStyle}" Padding="0" Width="338" Height="69" TextAlignment="Center" TextWrapping="Wrap" Margin="10,0,10.333,-0.333" Foreground="White"/>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="Actual3" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <StackPanel x:Name="A3" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Grid Width="358" Height="222">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="8*"/>
+                                    <RowDefinition Height="0*"/>
+                                </Grid.RowDefinitions>
+                                <Image x:Name="ImageActual3" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="2"/>
+                                <StackPanel x:Name="StackPanelActual3" Margin="0,144,0,3.667" Grid.RowSpan="2" Background="#B20ABBC3">
+                                    <TextBlock x:Name="TextActual3" FontSize="25"
+                        			Pivot.SlideInAnimationGroup="1"
+                        			CommonNavigationTransitionInfo.IsStaggerElement="True"
+                        			Style="{StaticResource ListViewItemTextBlockStyle}" Padding="0" Width="338" Height="69" TextAlignment="Center" TextWrapping="Wrap" Margin="10,0,10.333,-0.333" Foreground="White"/>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="Actual4" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <StackPanel x:Name="A4" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Grid Width="358" Height="222">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="8*"/>
+                                    <RowDefinition Height="0*"/>
+                                </Grid.RowDefinitions>
+                                <Image x:Name="ImageActual4" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="2"/>
+                                <StackPanel x:Name="StackPanelActual4" Margin="0,144,0,3.667" Grid.RowSpan="2" Background="#B20ABBC3">
+                                    <TextBlock x:Name="TextActual4" FontSize="25"
+                        			Pivot.SlideInAnimationGroup="1"
+                        			CommonNavigationTransitionInfo.IsStaggerElement="True"
+                        			Style="{StaticResource ListViewItemTextBlockStyle}" Padding="0" Width="338" Height="69" TextAlignment="Center" TextWrapping="Wrap" Margin="10,0,10.333,-0.333" Foreground="White"/>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="Actual5" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <StackPanel x:Name="A5" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Grid Width="358" Height="222">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="8*"/>
+                                    <RowDefinition Height="0*"/>
+                                </Grid.RowDefinitions>
+                                <Image x:Name="ImageActual5" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="2"/>
+                                <StackPanel x:Name="StackPanelActual5" Margin="0,144,0,3.667" Grid.RowSpan="2" Background="#B20ABBC3">
+                                    <TextBlock x:Name="TextActual5" FontSize="25"
+                        			Pivot.SlideInAnimationGroup="1"
+                        			CommonNavigationTransitionInfo.IsStaggerElement="True"
+                        			Style="{StaticResource ListViewItemTextBlockStyle}" Padding="0" Width="338" Height="69" TextAlignment="Center" TextWrapping="Wrap" Margin="10,0,10.333,-0.333" Foreground="White"/>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="Actual6" Pivot.SlideInAnimationGroup="3"
+                                  Padding="0" Visibility="Collapsed" Margin="0,0,0,5" Tag="0">
+                        <StackPanel x:Name="A6" Margin="0,0,0,9.5" Orientation="Horizontal" Width="362">
+                            <Grid Width="358" Height="222">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="8*"/>
+                                    <RowDefinition Height="0*"/>
+                                </Grid.RowDefinitions>
+                                <Image x:Name="ImageActual6" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="2"/>
+                                <StackPanel x:Name="StackPanelActual6" Margin="0,144,0,3.667" Grid.RowSpan="2" Background="#B20ABBC3">
+                                    <TextBlock x:Name="TextActual6" FontSize="25"
+                        			Pivot.SlideInAnimationGroup="1"
+                        			CommonNavigationTransitionInfo.IsStaggerElement="True"
+                        			Style="{StaticResource ListViewItemTextBlockStyle}" Padding="0" Width="235" Height="69" TextAlignment="Center" TextWrapping="Wrap" Margin="62,0,61.333,-0.333" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </PivotItem>
+            <!-- Конец раздела Актуально ************************** -->
+            <PivotItem x:Name="MainPage_События" Header="События" Margin="19,0,19,-0.5">
+                <ListView x:Name="Events">
+                    <StackPanel Margin="0">
+                        <TextBlock x:Name="CalendarTitle" FontSize="30" Foreground="#FF00D2FF" Pivot.SlideInAnimationGroup="1">
+                        </TextBlock>
+                        <ListView Margin="0,10,0,0" x:Name="CalendarList" Pivot.SlideInAnimationGroup="2"
+                          IsItemClickEnabled="True">
+                        </ListView>
+                    </StackPanel>
+                </ListView>
+            </PivotItem>
+            <!-- Конец раздела События ************************** -->
+            <PivotItem x:Name="MainPage_О_программе" Header="О программе" Margin="19,0,19,-0.5">
+                <ListView x:Name="Info" VerticalContentAlignment="Stretch" HorizontalAlignment="Center" Margin="-13,0,0,0" VerticalAlignment="Center">
+                    <RichTextBlock HorizontalAlignment="Center">
+                        <Paragraph TextAlignment="Center">
+                            <InlineUIContainer>
+                                <Image Source="Assets/Logo.png" Height="200" Width="200"/>
+                            </InlineUIContainer>
+                        </Paragraph>
+                        <Paragraph></Paragraph>
+                        <Paragraph FontSize="22" TextAlignment="Center" Foreground="White">
+                            Программа создана лабораторией
+                                 «компьютерного моделирования 
+                                 и разработки программного 
+                                 обеспечения»
+                        </Paragraph>
+                        <Paragraph Foreground="White" TextAlignment="Center" FontSize="22">
+                            <Bold>
+                                 Сахалинского гумнитарно-технологического института.
+                            </Bold>
+                        </Paragraph>
+                       <Paragraph></Paragraph>
+                        <Paragraph></Paragraph>
+                        <Paragraph TextAlignment="Center">
+                            <Run Text="@КМРПО СахГТИ, 2016 год." FontSize="18" Foreground="White"/>
+                        </Paragraph>
+                        <Paragraph TextAlignment="Center">
+                            <Run Text="http://www.sakhiepi.ru" FontSize="18" Foreground="White"/>
+                        </Paragraph>
+                        <Paragraph TextAlignment="Center">
+                            <Run Text="laboratory@sakhiepi.ru" FontSize="18" Foreground="White"/>
+                        </Paragraph>
+                    </RichTextBlock>
+                    
+                </ListView>
+            </PivotItem>
+            <!-- Конец раздела О программе ************************** -->
+        </Pivot>
+    </Grid>
+</Page>
