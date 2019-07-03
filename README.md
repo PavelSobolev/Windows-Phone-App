@@ -26,7 +26,7 @@ Software includes client (mobile) part and server part which is set of ASP.NET s
 #### News page and setting screen for viewing of a schedule
 ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w8.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w9.png) 
 
-#### List of lecturers and their schedule
+#### Lists of lecturers and student groups, page of lecturer's schedule
 ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w10.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w11.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w12.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w13.png) 
 
 #### About this app
