@@ -4,7 +4,7 @@ This mobile application was created in 2015 to inform current and potential cust
 
 ### Used technologies
 
-Software includes client (mobile) part and server part which is set of ASP.NET scripts which form Web-API used by the client (Web API returns dat in the form of XML). Server part is not presented in the commit (because of containing of some sensitive data).
+Software includes client (mobile) part and server part which is set of ASP.NET scripts which form Web-API used by the client (Web API returns neede data in the form of XML). Server part is not presented in the commit (because of containing of some sensitive data).
 
 1. .NET Framework, WIndows Presentation Foundation, XAML
 2. Visual C#
