@@ -14,7 +14,7 @@ Software includes client (mobile) part and server part which is set of ASP.NET s
 
 ### Examples of UI (in Russlian)
 
-#### Splash screen and main page
+#### Splash screen with log and main page
 ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w0.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w1.png) 
 
 #### Main menu about structural divisions and page with content of one of them
@@ -26,8 +26,8 @@ Software includes client (mobile) part and server part which is set of ASP.NET s
 #### News page and setting screen for viewing of a schedule
 ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w8.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w9.png) 
 
-#### List of lectures and their schedule
+#### List of lecturers and their schedule
 ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w10.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w11.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w12.png) ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w13.png) 
 
-#### Abou this app
+#### About this app
 ![ui](https://github.com/PavelSobolev/Windows-Phone-App/blob/master/uiimg/w14.png)
